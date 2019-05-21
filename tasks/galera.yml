@@ -13,8 +13,7 @@
       name: "{{ mariadb_daemon }}"
       state: stopped
   - name: Bootstraping the Cluster.
-    shell: |
-      /usr/sbin/service mysql start --wsrep-new-cluster
+    shell:  "/bin/galera_new_cluster"
   - name: Make sure mariadb is started.
     service:
       name: "{{ mariadb_daemon }}"
