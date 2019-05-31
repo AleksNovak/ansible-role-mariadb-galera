@@ -12,3 +12,4 @@
   with_items:
     - "{{ mariadb_users }}"
   run_once: True
+  no_log: True
