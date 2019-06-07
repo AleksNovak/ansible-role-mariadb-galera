@@ -43,6 +43,8 @@ galera_wsrep_drupal_282555_workaround: 0
 galera_wsrep_causal_reads: 0
 galera_wsrep_notify_cmd: ""
 galera_wsrep_sst_method: rsync
+mysql_slow_query_log: 0
+mysql_long_query_time: 10
 
 #Innodb parameters
 mysql_innodb_buffer_pool_size: 256M

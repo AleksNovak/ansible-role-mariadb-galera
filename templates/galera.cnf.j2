@@ -38,3 +38,11 @@ wsrep_sst_method={{ galera_wsrep_sst_method }}
 wsrep_node_address={{ ipaddr }}
   {%- endif %}
 {% endfor %}
+
+{% if mysql_slow_query_log is defined and mysql_slow_query_log %}
+slow_query_log=1
+{% if mysql_long_query_time is defined and mysql_long_query_time %}
+long_query_time={{ mysql_long_query_time }}
+{% endif %}
+{% endif %}
+
