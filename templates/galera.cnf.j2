@@ -1,5 +1,6 @@
 [mysqld]
 datadir={{ galera_mysql_datadir }}
+tmpdir={{ galera_mysql_datadir }}/tmp
 skip-name-resolve=1
 binlog_format=ROW
 default-storage-engine=innodb
